@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: azure;
+    color: rgb(58, 201, 189);
+}
+
+header {
+    background: chocolate;
+    color: rgb(58, 227, 233);
+    text-align: center;
+    padding: 25px;
+    text-shadow: 2px 2px 5px rgb(36, 34, 34);
+}
+
+.presentacion {
+    padding: 20px;
+    text-align: center;
+}
+
+.presentacion img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.presentacion h2 {
+    color: darkgreen;
+}
+
+.btn-accion {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #cc1616, #1e08e7);
+    color: rgb(39, 224, 15);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgb(199, 8, 8);
+    transition: background 0.3s, transforma 0.3s;
+}
+.btn-accion:hover {
+    background: linear-gradient(45deg, #e2c20c #cc480a);
+    transform: scale(1.1);
+}
+
+.galeria {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.imagenes {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px #070707;
+}
+
+footer {
+    background: rgb(202, 202, 211);
+    color: rgb(34, 16, 194);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.redes {
+    margin: 10px 0 ;
+}
+
+.redes a {
+    font-size: 28px;
+    margin: 0 12px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+.redes a:hover {
+    transform: scale(1.2);
+    color: rgb(27, 27, 26);
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+        text-align: left;
+    }
+    .presentacion img {
+        margin-bottom: 0;
+    }
+}
